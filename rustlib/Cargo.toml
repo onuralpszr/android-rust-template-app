@@ -3,8 +3,6 @@ name = "rustlib"
 version = "0.1.0"
 edition = "2021"
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
-
 [dependencies]
 android_logger = "0.13.3"
 jni = "0.21.1"
@@ -15,3 +13,13 @@ ndk-sys = "0.4.1"
 [lib]
 crate-type = ["cdylib"]
 name = "rustlib"
+
+[profile.dev]
+opt-level = 0
+
+[profile.release]
+opt-level = "z"
+strip = true
+lto = true
+codegen-units = 1
+panic = "abort"
