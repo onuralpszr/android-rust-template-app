@@ -22,12 +22,12 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    Greeting("Android")
+
+                    hello("JniRustCalled")?.let { Greeting(it) }
                 }
             }
         }
     }
-
 
     companion object {
         init {
@@ -37,11 +37,13 @@ class MainActivity : ComponentActivity() {
 
 }
 
+private external fun hello(input: String): String?
+
 
 @Composable
 fun Greeting(name: String, modifier: Modifier = Modifier) {
     Text(
-        text = "Hello $name!",
+        text = "Hello_JetpackCompose $name!",
         modifier = modifier
     )
 }
