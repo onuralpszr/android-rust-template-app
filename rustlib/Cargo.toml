@@ -11,3 +11,7 @@ android_logger = "0.13.3"
 log = "0.4.20"
 ndk = "0.7.0"
 ndk-sys = "0.4.1"
+
+[lib]
+crate-type = ["cdylib"]
+name = "rustlib"

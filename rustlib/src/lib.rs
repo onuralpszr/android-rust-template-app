@@ -3,7 +3,7 @@ use log::info;
 
 #[no_mangle]
 fn android_main(app: AndroidApp) {
-    android_logger::init_once(android_logger::Config::default().level(log::Level::Info));
+    android_logger::init_once(android_logger::Config::default().with_max_level(log::LevelFilter::Info));
 
     let mut quit = false;
     let mut redraw_pending = true;
