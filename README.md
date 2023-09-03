@@ -1,0 +1,1 @@
+# android-rust-template-app
