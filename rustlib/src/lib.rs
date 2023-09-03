@@ -4,9 +4,9 @@
 use jni::JNIEnv;
 use jni::objects::{JClass, JString};
 
-
+// https://doc.rust-lang.org/reference/items/external-blocks.html#abi
 #[no_mangle]
-pub extern "system" fn Java_com_os_androidrusttemplate_MainActivityKt_hello<'local>(
+pub extern "C" fn Java_com_os_androidrusttemplate_MainActivityKt_hello<'local>(
     // Notice that this `env` argument is mutable. Any `JNIEnv` API that may
     // allocate new object references will take a mutable reference to the
     // environment.
