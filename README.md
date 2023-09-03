@@ -30,7 +30,7 @@ cargo install cargo-ndk
 cargo ndk -t arm64-v8a -o ../app/src/main/jniLibs/  build
 ```
 
-or build for all archictures
+or build for all architectures
 
 ```console
 cd rustlib
