@@ -1,7 +1,10 @@
+#![cfg(target_os="android")]
+#![allow(non_snake_case)]
+
 use jni::JNIEnv;
 use jni::objects::{JClass, JString};
 
-#[allow(non_snake_case)]
+
 #[no_mangle]
 pub extern "system" fn Java_com_os_androidrusttemplate_MainActivityKt_hello<'local>(
     // Notice that this `env` argument is mutable. Any `JNIEnv` API that may
