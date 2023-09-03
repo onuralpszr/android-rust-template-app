@@ -1,0 +1,13 @@
+[package]
+name = "rustlib"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+android-activity = { version = "0.4.3", features = ["game-activity"] }
+android_logger = "0.13.3"
+log = "0.4.20"
+ndk = "0.7.0"
+ndk-sys = "0.4.1"
