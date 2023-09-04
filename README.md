@@ -6,7 +6,8 @@ This is an Android project that demonstrates how to use Rust code in a Jetpack C
 
 - Rust 1.55.0 or later
 - Cargo 1.55.0 or later
-- Android SDK and NDK
+- Android SDK
+- Android NDK >= r23
 
 ## Getting Started
 
